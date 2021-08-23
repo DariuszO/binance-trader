@@ -12,8 +12,8 @@ except ImportError:
  
 class BinanceAPI:
     
-    BASE_URL = "https://www.binance.com/api/v1"
-    BASE_URL_V3 = "https://api.binance.com/api/v3"
+    BASE_URL = "https://www.binance.com/api/v3"
+    BASE_URL_V3 = "https://www.binance.com/sapi/v1/margin"
     PUBLIC_URL = "https://www.binance.com/exchange/public/product"
 
     def __init__(self, key, secret):
