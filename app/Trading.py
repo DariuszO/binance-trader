@@ -395,10 +395,10 @@ class Trading():
         lastBid, lastAsk = Orders.get_order_book(symbol)
 
         # Target buy price, add little increase #87
-        buyPrice = lastBid + self.increasing
+        buyPrice = lastBid + (lastBid * self.increasing / 100)
 
         # Target sell price, decrease little 
-        sellPrice = lastAsk - self.decreasing
+        sellPrice = lastAsk - (lastAsk * self.decreasing / 100)
 
         # Spread ( profit )
         profitableSellingPrice = self.calc(lastBid)
