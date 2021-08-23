@@ -6,9 +6,9 @@ This is an experimental bot for auto trading the binance.com exchange. [@yasinku
 
 ## Configuration
 
-1. [Signup](https://www.binance.com/?ref=10701111) for Binance
+1. [Signup](https://www.binance.com/?ref=192571983) for Binance
 2. Enable Two-factor Authentication
-3. Go API Center, [Create New](https://www.binance.com/en/my/settings/api-management?ref=10701111) Api Key
+3. Go API Center, [Create New](https://www.binance.com/en/my/settings/api-management?ref=192571983) Api Key
 
         [✓] Read Info [✓] Enable Trading [X] Enable Withdrawals
 
@@ -28,7 +28,7 @@ This is an experimental bot for auto trading the binance.com exchange. [@yasinku
 
 ## Support
 
-[https://www.binance.com/?ref=10701111](https://www.binance.com/?ref=10701111)
+[https://www.binance.com/?ref=192571983](https://www.binance.com/?ref=192571983)
 
 ## Requirements
 
@@ -66,8 +66,8 @@ This is an experimental bot for auto trading the binance.com exchange. [@yasinku
     --stop_loss    Decrease sell price at loss Percentage (default 0)
     --orderid      Target Order Id (default 0)
     --wait_time    Wait Time (seconds) (default 0.7)
-    --increasing   Buy Price Increasing  +(default 0.00000001)
-    --decreasing   Sell Price Decreasing -(default 0.00000001)
+    --increasing   Buy Price Increasing Percentage  +(default 0.2)
+    --decreasing   Sell Price Decreasing Percentage -(default 0.2)
     --prints       Scanning Profit Screen Print (default True)
     --loop         Loop (default 0 unlimited)
 
