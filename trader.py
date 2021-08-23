@@ -20,8 +20,8 @@ if __name__ == '__main__':
 
     parser.add_argument('--stop_loss', type=float, help='Target Stop-Loss %% (If the price drops by 6%%, sell market_price.)', default=0)
 
-    parser.add_argument('--increasing', type=float, help='Buy Price +Increasing (0.00000001)', default=0.00000001)
-    parser.add_argument('--decreasing', type=float, help='Sell Price -Decreasing (0.00000001)', default=0.00000001)
+    parser.add_argument('--increasing', type=float, help='Buy Price +Increasing 0.2%', default=0.2)
+    parser.add_argument('--decreasing', type=float, help='Sell Price -Decreasing 0.2%', default=0.2)
 
     # Manually defined --orderid try to sell
     parser.add_argument('--orderid', type=int, help='Target Order Id (use balance.py)', default=0)
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument('--test_mode', type=bool, help='Test Mode True/False', default=False)
     parser.add_argument('--prints', type=bool, help='Scanning Profit Screen Print True/False', default=True)
     parser.add_argument('--debug', help='Debug True/False if set --debug flag, will output all messages every "--wait_time" ',
-                        action="store_true", default=False) # 0=True, 1=False
+                        action="store_true", default=True) # 0=True, 1=False
     parser.add_argument('--loop', type=int, help='Loop (0 unlimited)', default=0)
 
     # Working Modes
